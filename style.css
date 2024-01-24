@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+
+.slider-container {
+    overflow: hidden;
+    width: 80vw;
+    margin: 5vh auto 5vh;
+    /* this line below centered the img y-axis */
+    height: 90vh;
+    max-width: 80rem;
+    /* this line below centered the img */
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    /* this line below fixed the img position issue from 80vw value */
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  */
+
+
+.slide:nth-child(1) h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: red;
+}
+
+.slide:nth-child(2) h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: red;
+}
+
+.slide:nth-child(3) h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: red;
+}
+
+.slide:nth-child(4) h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: red;
+}
+
+
+/*  */
+
+
+.button {
+    position: absolute;
+    bottom: 100px;
+}
+
+.nextBtn {
+    left: 60px;
+}
+
+.prevBtn {
+    left: 10px;
+}
+
+
+/* Below is the manual setup of slideshow */
+
+/* .slide:nth-child(1) {
+    left: 0;
+}
+
+.slide:nth-child(2) {
+    left: 100%;
+}
+
+.slide:nth-child(3) {
+    left: 200%;
+}
+
+.slide:nth-child(4) {
+    left: 300%;
+}
+
+.slide {
+    transform: translateX(-300%);
+} */
+
+
+@media (max-width: 1150px) {
+    .slider-container {
+        height: 80vh;
+    }
+
+    .button {
+        bottom: 70px;
+    }
+}
+
+@media (max-width: 650px) {
+    .slider-container {
+        height: 60vh;
+    }
+}
